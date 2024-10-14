@@ -3929,14 +3929,22 @@ input, select, textarea {
 }
 
 .headshot {
-    width: 200px;              /* Desired width */
-    height: 200px;             /* Desired height */
-    object-fit: cover;         /* Crop to fit */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     object-position: top;
-    border-radius: 100%;        /* Circular image */
-    margin-left: 900px;        /* Space between image and text */
+    border-radius: 100%;
+    margin-left: auto; /* Centering on smaller screens */
+    margin-right: auto; /* Centering on smaller screens */
+    display: block; /* Ensures the image is treated as a block-level element */
 }
 
+/* For larger screens, maintain the margin-left */
+@media (min-width: 768px) {
+    .headshot {
+        margin-left: 900px;
+    }
+}
 
 
 #five {
