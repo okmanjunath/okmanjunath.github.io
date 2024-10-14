@@ -3229,7 +3229,7 @@ input, select, textarea {
 			}
 
 			.spotlights > section > .content {
-			width:80vw;
+			width:100vw;
 				padding: 3em 2em 1em 2em ;
 				margin: 0 auto; /* Ensure the content is centered */
        
