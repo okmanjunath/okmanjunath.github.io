@@ -3069,18 +3069,18 @@ input, select, textarea {
     }
 
     .spotlights > section > .image {
-        width: 100%;
-        height: 50vh;
+        width: 40%;
+        height: auto;
     }
 
     .spotlights > section > .content {
-        width: 100%;
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 736px) {
     .spotlights > section > .image {
-        height: 50vh;
+        height: auto;
         min-height: 15em;
     }
 
@@ -3099,7 +3099,7 @@ input, select, textarea {
 			    background-repeat: no-repeat; /* Prevents vertical repeating */
 			    background-color: white; /* White background behind the image */
 			border-radius: 0;
-			display: block;
+			display: flex;
 			position: relative;
 			
 			 width: 100%; /* Allow the image to take 100% of the container's width */
@@ -3193,16 +3193,16 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.spotlights > section {
-				display: block;
+				display: flex;
 			}
 
 				.spotlights > section > .image {
-					width: 100%;
-					height: 50vh;
+					width: 40%;
+					height: auto;
 				}
 
 				.spotlights > section > .content {
-					width: 100%;
+					width: 60%;
 				}
 
 				.spotlights > section.inactive > .content > .inner,
@@ -3216,10 +3216,14 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+		.spotlights > section {
+				display: block;
+			}
 
 			.spotlights > section > .image {
-				height: 50vh;
-				min-height: 15em;
+				height: auto;
+				width:50vw;
+				
 			}
 
 			.spotlights > section > .content {
@@ -3900,14 +3904,15 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
-				height: 4.0em;
-				left: 0;
+				height: 5.0em;
+				left: 0.;
 				line-height: 1.0em;
 				overflow: hidden;
 				padding: 0.7em;
 				text-align: center ;
 				top: 0;
 				width: 100%;
+				display:flex
 				flex-wrap: wrap;
 			}
 
@@ -3943,7 +3948,7 @@ input, select, textarea {
 							display: block;
 							height: inherit;
 							line-height: inherit;
-							margin: 0 0 0 2em;
+							margin: 0 0 0 0.5em;
 							padding: 0;
 						}
 
@@ -3957,6 +3962,20 @@ input, select, textarea {
 							background-image: none;
 							background-color: #b74e91;
 						}
+						
+						/* Additional styles for nav items */
+#sidebar nav > ul {
+    display: flex; /* Flexbox for the nav */
+    flex-direction: row; /* Stack items vertically */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+}
+
+#sidebar nav a {
+    padding: 0.5em; /* Consistent padding for links */
+    text-decoration: none; /* Remove underline */
+}
+
 
 		}
 
@@ -3967,6 +3986,9 @@ input, select, textarea {
 			}
 
 		}
+		
+
+
 #intro {
     background-image: url("images/intro.jpg");
     background-position: top right;
