@@ -3917,8 +3917,8 @@ input, select, textarea {
 				text-align: center ;
 				top: 0;
 				width: 100%;
-				display:flex
-				flex-wrap: wrap;
+				
+				
 			}
 
 				#sidebar > .inner {
@@ -3969,17 +3969,17 @@ input, select, textarea {
 						}
 						
 						/* Additional styles for nav items */
-#sidebar nav > ul {
-    display: flex; /* Flexbox for the nav */
-    flex-direction: row; /* Stack items vertically */
-    padding: 0; /* Reset padding */
-    margin: 0; /* Reset margin */
-}
+					#sidebar nav > ul {
+					    display: flex; /* Flexbox for the nav */
+					    flex-direction: row; /* Stack items vertically */
+					    padding: 0; /* Reset padding */
+					    margin: 0; /* Reset margin */
+					}
 
-#sidebar nav a {
-    padding: 0.5em; /* Consistent padding for links */
-    text-decoration: none; /* Remove underline */
-}
+					#sidebar nav a {
+					    padding: 0.5em; /* Consistent padding for links */
+					    text-decoration: none; /* Remove underline */
+					}
 
 
 		}
@@ -4060,7 +4060,7 @@ input, select, textarea {
 /* For larger screens, maintain the margin-left */
 @media (min-width: 768px) {
     .headshot {
-        margin-left:  calc(50vw - 100px);;
+        margin-left:  calc(50vw - 10px);;
     }
 }
 
