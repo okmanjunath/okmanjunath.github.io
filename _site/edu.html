@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Education - Manjunath Omana Kuttan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Timeline styling */
+			.timeline {
+				position: relative;
+				max-width: 1500px;
+				margin: 0 auto;
+			}
+
+			/* The timeline line */
+			.timeline::after {
+				content: '';
+				position: absolute;
+				width: 6px;
+				background-color: #f7a046;
+				top: 0;
+				bottom: 0;
+				left: 50%;
+				margin-left: -3px;
+			}
+
+			/* Timeline container */
+			.container {
+				padding: 10px 40px;
+				position: relative;
+				background-color: inherit;
+				width: 50%;
+			}
+
+			/* Containers on the left and right */
+			.container.left {
+				left: 0;
+			}
+
+			.container.right {
+				left: 50%;
+			}
+
+			/* Correct the arrow direction for the left container */
+			.container.left::before {
+				content: " ";
+				height: 0;
+				position: absolute;
+				top: 15px;
+				width: 0;
+				z-index: 1;
+				right: 3px; /* Fix for left arrow */
+				border: medium solid #f7a046;
+				border-width: 10px 10px 10px 0; /* Arrow pointing towards the content */
+				border-color: transparent #f7a046 transparent transparent;
+			}
+
+			/* Correct the arrow direction for the right container */
+			.container.right::before {
+				content: " ";
+				height: 0;
+				position: absolute;
+				top: 15px;
+				width: 0;
+				z-index: 1;
+				left: 3px; /* Fix for right arrow */
+				border: medium solid #f7a046;
+				border-width: 10px 0 10px 10px; /* Arrow pointing towards the content */
+				border-color: transparent transparent transparent #f7a046;
+			}
+
+			/* Content inside each timeline item */
+			.container .content {
+				padding: 20px 30px;
+				background-color: 000000;
+				position: relative;
+				border-radius: 6px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+				color: white; /* Dark text color */
+				background: 000000; /* Light grey background for contrast */
+			}
+
+			/* Time element */
+			.container .time {
+				color: #f7a046;
+				font-size: 1.2em;
+				font-weight: bold;
+			}
+
+			/* Responsive timeline - on screens less than 600px wide */
+			@media screen and (max-width: 600px) {
+				.timeline::after {
+					left: 31px;
+				}
+
+				.container {
+					width: 100%;
+					padding-left: 70px;
+					padding-right: 25px;
+				}
+
+				.container.left::before, .container.right::before {
+					left: 60px;
+					border: medium solid #f7a046;
+					border-width: 10px 10px 10px 0;
+					border-color: transparent #f7a046 transparent transparent;
+				}
+
+				.container.right {
+					left: 0%;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper" class="wrapper fade"> <!-- Include fade class for transition -->
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Manjunath Omana Kuttan</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Education</h1>
+
+					<!-- Timeline Container -->
+					<div class="timeline">
+						
+						<!-- Ph.D. Entry -->
+						<div class="container left">
+							<div class="content">
+								<p class="time">2019 – 2023</p>
+								<h2>Ph.D. in Physics (Dr. phil. nat.)</h2>
+								<p><strong>Johann Wolfgang Goethe-Universität, <br>Frankfurt am Main, Germany</strong></p>
+								
+								<p><br>Graduation: <strong>Magna Cum Laude</strong></p>
+								<br>
+								<p><em>Dissertation:</em> Artificial Intelligence in Heavy-Ion Collisions: Bridging the Gap Between Theory and Experiments</p>
+								<p>Advisor: <em>Prof. Dr. Dr. h.c. mult. Horst Stoecker</em></p>
+								<br>
+								<li><p>Member of HGS-HIRe for FAIR </li></p>
+								<li>Member of Frankfurt International Graduate School for Science (FIGGS)</li>
+							</div>
+						</div>
+
+						<!-- M.Sc. Entry -->
+						<div class="container right">
+							<div class="content">
+								<p class="time">2017 – 2019</p>
+								<h2>M.Sc. in Physics</h2>
+								<p><strong>Central University of Karnataka, Karnataka, India</strong></p>
+								<p>Grade: <strong>80%</strong></p>
+								<p><em>Thesis:</em> Deep Learning Techniques for Muon Momentum Reconstruction for the INO-ICAL Detector</p>
+								<p>Advisor:<em> Prof. Dr. Deepak Samuel </em></p>
+							</div>
+						</div>
+
+						<!-- B.Sc. Entry -->
+						<div class="container left">
+							<div class="content">
+								<p class="time">2014 – 2017</p>
+								<h2>B.Sc. in Physics</h2>
+								<p><strong>Government College Kasaragod, Kerala, India</strong></p>
+								<p>Grade: <strong>83%</strong></p>
+							</div>
+						</div>
+
+					</div> <!-- End of Timeline -->
+					
+					<!-- Back to Homepage Button -->
+					<a href="index.html" class="button homepage-button">Back to Homepage</a>
+
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Design: Adapted from <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Fade-in transition script -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					document.body.classList.add('loaded'); // Apply the loaded class on DOM content load
+					document.body.classList.remove("is-preload");
+					var wrapper = document.getElementById("wrapper");
+					wrapper.classList.remove("fade");
+					wrapper.classList.add("fade-up");
+					console.log('Classes applied:', document.body.className, wrapper.className);
+				});
+			</script>
+		</div> <!-- End of wrapper -->
+	</body>
+</html>
+

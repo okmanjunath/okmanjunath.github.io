@@ -6,46 +6,61 @@
 -->
 <html>
 	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
+		<title>About me</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" >
+        <div id="wrapper" class="wrapper fade"> <!-- Include fade class for transition -->
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Manjunath Omana Kuttan</a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
+						
+						
 					</ul>
 				</nav>
 			</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">About me</h1>
+					<!-- span class="image fit"><img src="images/pic04.jpg" alt="" /></span -->
+<p> I am Dr. Manjunath Omana Kuttan, a Postdoctoral Researcher at the Frankfurt Institute for Advanced Studies. My academic interests primarily focus on the development of novel tools and techniques for fundamental physics analyses. My research is centered on creating cutting-edge Deep Learning techniques and statistical methods for high-energy physics, computational modeling of fundamental interactions, and tackling inverse problems through simulation-based physics inference. Solving these inverse problems involve modeling the relevant physics including detector simulations and utilizing AI methods to infer the underlying physics from experimental data. </p> 
+<br>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
-					</section>
 
-			</div>
+
+<p> My academic journey began with the <strong> India-based Neutrino Observatory (INO) </strong> project, where I was actively involved in R&D for the mini-ICAL detector, a prototype for the proposed Iron CALorimeter (ICAL) detector. During my Master’s studies, I gained hands-on experience in various aspects of experimental physics, including fabricating and testing of Resistive Plate Chambers for the experiment and in the installation of the mini-ICAL detector. </p> 
+<br>
+<p> My Master's thesis marked the beginning of my journey with Machine Learning techniques. I developed AI methods to reconstruct momentum of neutrinos from the data in the INO-ICAL detector and to identify the charge and directionality of cosmic muons in the mini-ICAL detector.</p>
+<br>
+ <p><p>
+    Eager to further explore AI's vast potential in fundamental physics, I transitioned from my experimental <strong>Neutrino Physics</strong> background to pursuing a Ph.D. in <strong>High Energy Nuclear Physics</strong> at the intersection of theory and experiment. My research focused on developing AI methods to bridge the gap between theoretical models and experimental data in high energy heavy-ion collisions. This experience gave me  a strong foundation in modelling the dynamics of high-energy collisions, state-of-the-art techniques for data analysis, GEANT based detector simulations, and AI-driven physics analyses. I worked extensively with theoretical models such as UrQMD, CMF, and relativistic hydrodynamics, and developed AI methods to analyse data from experiments such as <strong>HADES@GSI, CBM@FAIR, PANDA@FAIR, STAR@RHIC, and NA61@CERN.</strong> </p> 
+ <br>
+ <p> Currently, as a member of the <a href="https://kiss.pages.desy.de/website" target="KISS website">KISS collaboration</a>,  my research focuses on the development of ultra-fast simulation techniques for heavy-ion collisions using modern deep generative methods. This involves developing diffusion models and autoregressive generative models for fast simulations of heavy-ion collision events, speeding up relativistic hydrodynamics simulations, and accelerating detector simulations. These AI-driven techniques have broad applications across nuclear and particle physics, offering significant advancements in both speed and accuracy for future experiments. </p> 
+ <br>
+ <p> My diverse background in experimental Neutrino Physics, High Energy Physics, and AI places me at the unique <strong>intersection of theory, experiment, and data science</strong>. With AI being the Swiss knife in my toolbox, I aim to continue advancing my research career by tackling complex challenges and pushing the boundaries of our understanding of fundamental physics.</p>
+
+
+					<!-- Back to Homepage Button -->
+					<a href="index.html" class="button homepage-button">Back to Homepage</a>
+
+				</div>
+			</section>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						
+						<li>Design: Adapted from <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -58,6 +73,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- Fade-in transition script -->
+			<script>
+			document.addEventListener("DOMContentLoaded", function () {
+    				document.body.classList.add('loaded'); // Apply the loaded class on DOM content load
 
+    document.body.classList.remove("is-preload");
+    var wrapper = document.getElementById("wrapper");
+    wrapper.classList.remove("fade");
+    wrapper.classList.add("fade-up");
+
+    console.log('Classes applied:', document.body.className, wrapper.className);
+});
+
+
+			</script>
+        </div> <!-- End of wrapper -->
 	</body>
 </html>
+
