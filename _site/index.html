@@ -63,7 +63,7 @@ Schnellen Simulation von wissenschaftlichen Daten  <br><p style="margin-left: 0p
 <!-- One -->
 <section id="one" class="wrapper style2 spotlights">
     <section>
-        <a href="#" class="image">
+        <a href="news.html" class="image">
             <img src="images/prl.png" alt="Latest news Image" data-position="center center" />
         </a>
         <div class="content">
@@ -78,7 +78,7 @@ Schnellen Simulation von wissenschaftlichen Daten  <br><p style="margin-left: 0p
     </section>
     
     <section id="two">
-        <a href="#" class="image">
+        <a href="interests.html" class="image">
             <img src="images/research.png" alt="Scientific Interests Image" data-position="center center" />
         </a>
         <div class="content">
@@ -100,7 +100,7 @@ Schnellen Simulation von wissenschaftlichen Daten  <br><p style="margin-left: 0p
     </section>
 
     <section id="three">
-        <a href="#" class="image">
+        <a href="edu.html" class="image">
             <img src="images/edu.png" alt="Education Image" data-position="45% 25%" />
         </a>
         <div class="content">
@@ -130,7 +130,7 @@ Schnellen Simulation von wissenschaftlichen Daten  <br><p style="margin-left: 0p
     </section>
     
     <section id="four">
-        <a href="#" class="image">
+        <a href="exp.html" class="image">
             <img src="images/exp.png" alt="Research Experience Image" data-position="45% 25%" />
         </a>
         <div class="content">
@@ -446,6 +446,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>			
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Remove preload class to allow page to be visible
+    document.body.classList.add('loaded');
+    document.body.classList.remove("is-preload");
+
+    var wrapper = document.getElementById("wrapper");
+    wrapper.classList.remove("fade");
+    wrapper.classList.add("fade-up");
+
+    // Listen for the pageshow event to detect when coming back via the browser back button
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {  // True if the page is loaded from the cache
+            // Ensure opacity is reset to 1 when coming from back button
+            document.body.classList.add('loaded');
+            document.body.classList.remove("is-preload");
+            wrapper.style.opacity = 1;
+        }
+    });
+
+    console.log('Classes applied:', document.body.className, wrapper.className);
+});
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {

@@ -2985,7 +2985,7 @@ input, select, textarea {
 
 		}
 
-/* Spotlights */
+/* Spotlights 
 
 	.spotlights > section {
 		display: -moz-flex;
@@ -2998,6 +2998,96 @@ input, select, textarea {
 		flex-direction: row;
 		min-height: 22.5em;
 	}
+*/
+
+
+/* Spotlights */
+.spotlights > section {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 22.5em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%; /* Make sure the section spans full width */
+}
+
+/* Ensure image doesn't exceed space and adjust layout */
+.spotlights > section > .image {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 0;
+    display: block;
+    flex: 1 1 40%; /* Use flexbox to size the image */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 40%; /* Maximum width for image section */
+}
+
+/* Spotlight content takes remaining space */
+.spotlights > section > .content {
+    padding: 4em 2.5em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 60%; /* Flexbox to control content width */
+    box-sizing: border-box;
+}
+
+/* Ensure no gap on large screens */
+@media screen and (min-width: 1280px) {
+    .spotlights > section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    /* Ensure flex containers handle larger screens */
+    .spotlights > section > .image {
+        flex: 1 1 40%; /* Maintain 40% width */
+    }
+
+    .spotlights > section > .content {
+        flex: 1 1 60%; /* Maintain 60% width */
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 980px) {
+    .spotlights > section {
+        display: block;
+    }
+
+    .spotlights > section > .image {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .spotlights > section > .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .spotlights > section > .image {
+        height: 50vh;
+        min-height: 15em;
+    }
+
+    .spotlights > section > .content {
+        padding: 3em 2em 1em 2em;
+    }
+}
 
 		body.is-ie .spotlights > section {
 			min-height: 0;
@@ -3810,14 +3900,15 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#sidebar {
-				height: 3.5em;
+				height: 4.0em;
 				left: 0;
-				line-height: 3.5em;
+				line-height: 1.0em;
 				overflow: hidden;
-				padding: 0;
-				text-align: center;
+				padding: 0.7em;
+				text-align: center ;
 				top: 0;
 				width: 100%;
+				flex-wrap: wrap;
 			}
 
 				#sidebar > .inner {
@@ -3942,7 +4033,7 @@ input, select, textarea {
 /* For larger screens, maintain the margin-left */
 @media (min-width: 768px) {
     .headshot {
-        margin-left: 900px;
+        margin-left:  calc(50vw - 100px);;
     }
 }
 
