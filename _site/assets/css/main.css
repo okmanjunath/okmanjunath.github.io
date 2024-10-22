@@ -4105,14 +4105,6 @@ h100 a {
         font-size: 1em; /* Adjusts for smaller screens like h3 */
     }
 }
-.highlight {
-    background-color: #ffcc00; /* Add a background color for emphasis */
-    color: #000000;           /* Make the text white to contrast */
-    padding: 0.0em 0.1em;     /* Add padding for better readability */
-    font-weight: bold;        /* Make the text bold */
-    border-radius: 0.3em;     /* Rounded corners for a smoother look */
-    display: inline-block;    /* Ensure the highlight wraps around the text correctly */
-}
 .publication-separator {
     width: 100%; /* Ensures the <hr> spans the full width of the box */
     margin: 0; /* Removes default margin */
