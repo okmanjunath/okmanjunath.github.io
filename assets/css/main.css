@@ -4119,4 +4119,28 @@ h100 a {
     border: none; /* Removes the default border */
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Adds a thin line as a separator */
 }
+/* Style for the highlighted button */
+.button.highlight {
+    background-color: rgba(94, 66, 166, 0.2);  /* RGBA color with 0% opacity */  /* A strong background color to highlight */
+    color: white;               /* White text for contrast */
+    border: 10px solid #b74e91;  /* Optional border for emphasis */
+    padding: 0px 25px;         /* Add some padding for button-like appearance */
+    text-transform: uppercase;  /* Make the text uppercase */
+    font-weight: bold;          /* Make the font bold */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    border-radius: 25px;        /* This makes the edges rounded */
+}
+
+/* Hover effect */
+.button.highlight:hover {
+    background-color: #b74e91;  /* Change the background color on hover */
+    color: #fff;                /* Text stays white */
+    border-color: #fff;         /* Optional border color change on hover */
+}
+
+/* Focus effect for accessibility */
+.button.highlight:focus {
+    outline: 1px solid #b74e91; /* Add a focus outline */
+    outline-offset:1px;
+}
 
